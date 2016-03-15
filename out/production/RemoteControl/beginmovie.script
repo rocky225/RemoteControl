@@ -1,7 +1,0 @@
-input tap 660 80
-sleep 2000
-input tap 80 1240
-sleep 1000
-input tap 600 180
-sleep 1000
-input tap 600 180

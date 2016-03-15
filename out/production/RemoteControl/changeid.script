@@ -1,7 +1,0 @@
-changeid com.tencent.tmgp.bnsm cache:app_databases:app_webview:databases:files:shared_prefs:app_bugly
-
-
-
-# 参数一: app package
-# 参数二: 需要复制的文件夹使用;分开
-# cache:app_dex:app_tomb:databases:files:shared_prefs:app_bugly

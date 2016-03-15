@@ -1,4 +1,0 @@
-# 点击电源键
-input keyevent 26
-sleep 2000
-input swipe 100 1200 100 100 1000
