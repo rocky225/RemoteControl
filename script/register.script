@@ -1,0 +1,13 @@
+input tap 200 800
+sleep 500
+input tap 600 890
+sleep 500
+input text a123456
+sleep 500
+input tap 330 690
+sleep 1000
+input tap 200 840
+sleep 500
+input tap 500 840
+sleep 3000
+input tap 600 840

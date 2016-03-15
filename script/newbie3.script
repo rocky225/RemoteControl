@@ -1,0 +1,29 @@
+# 开始冒险 3
+input tap 550 350
+sleep 2000
+input tap 1050 600
+sleep 2000
+# 开始战斗
+input tap 1160 650
+sleep 20000
+input tap 430 600
+sleep 200
+input tap 630 600
+sleep 200
+input tap 830 600
+sleep 20000
+# 确定
+input tap 650 550
+sleep 7000
+input tap 1110 530
+sleep 5000
+# 教程
+input tap 1110 530
+sleep 1000
+
+
+
+# 开始冒险 3
+input tap 410 450
+# 退出
+input tap 50 50
