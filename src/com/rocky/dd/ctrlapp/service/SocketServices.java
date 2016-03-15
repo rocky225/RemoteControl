@@ -113,9 +113,14 @@ public class SocketServices {
             // 输出结果             System.out.println(rs.getString("sno") + "\t" + name);n
             for (String deviceinfo_id : ids) {
                 ResultSet rs2 = dbTools.executeQuery("select count(id) from deviceinfos where deviceinfo_id='" + deviceinfo_id + "'");
-                rs2.next();
-                BigDecimal bd = rs2.getBigDecimal(1);
-                int idNumber = 10 - bd.intValue();
+                int idNumber;
+                if(rs2 != null) {
+                    rs2.next();
+                    BigDecimal bd = rs2.getBigDecimal(1);
+                     idNumber = 10 - bd.intValue();
+                } else {
+                    idNumber = 10;
+                }
                 System.out.println(deviceinfo_id + " 数目为" + idNumber);
                 if (idNumber > 0) {
                     String sql = "select id from deviceinfos where deviceinfo_id is null limit " + idNumber;

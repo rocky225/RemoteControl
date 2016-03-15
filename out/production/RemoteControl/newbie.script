@@ -1,0 +1,69 @@
+# 对话
+input tap 1200 650
+sleep 500
+# 寻宝
+input tap 20 650
+sleep 2500
+input tap 1200 650
+sleep 1000
+# 免费寻宝1
+input tap 870 420
+sleep 5000
+input tap 880 90
+sleep 1000
+input tap 650 650
+sleep 1000
+# 寻宝2
+input tap 410 420
+sleep 5000
+input tap 880 90
+sleep 1000
+input tap 650 650
+sleep 3000
+# 对话
+input tap 1200 650
+sleep 2000
+# 退出
+input tap 50 50
+sleep 1000
+# 取消公告
+input tap 1170 50
+sleep 1000
+input tap 1170 50
+sleep 1000
+input tap 1170 50
+sleep 1000
+input tap 1170 50
+sleep 1000
+input tap 1170 50
+sleep 1000
+input tap 1170 50
+sleep 5000
+# 签到
+input tap 340 200
+sleep 2000
+input tap 640 480
+sleep 2000
+input tap 280 380
+sleep 2000
+input tap 640 480
+sleep 3000
+# 退出签到
+input tap 1110 50
+sleep 4000
+# 对话: 庄园
+input tap 1200 650
+sleep 2000
+# 开始冒险
+input tap 510 360
+sleep 8000
+# 对话: 亡者森林
+input tap 1200 650
+
+
+
+
+
+# 开始冒险 1
+input tap 410 450
+

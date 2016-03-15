@@ -1,0 +1,58 @@
+# 点击下一关
+# sleep 8000
+input tap 920 370
+sleep 10000
+# skip
+input tap 1220 40
+sleep 6000
+# 战斗
+input tap 1050 600
+sleep 15000
+# 对话
+input tap 1050 600
+sleep 3500
+input tap 1050 600
+sleep 4000
+input tap 1050 600
+sleep 11000
+input tap 1050 600
+sleep 4000
+input tap 1050 600
+sleep 8000
+# 女方出招
+input tap 850 600
+sleep 3500
+# 男方出招
+input tap 430 600
+sleep 11000
+# 女方出招
+input tap 850 600
+sleep 9000
+# 对话
+input tap 850 600
+sleep 5000
+input tap 850 600
+# 攻击
+sleep 3000
+input tap 850 600
+sleep 500
+input tap 430 600
+sleep 2000
+input tap 430 600
+sleep 7000
+input tap 850 600
+sleep 500
+input tap 430 600
+# 战斗结束
+sleep 10000
+input tap 1100 550
+# 剧情对话
+sleep 10000
+input tap 1220 40
+sleep 15000
+# 关闭公共
+input tap 1100 80
+sleep 1000
+input tap 1100 80
+sleep 3000
+input tap 650 500

@@ -1,0 +1,29 @@
+# 开始冒险 2
+input tap 410 450
+sleep 7000
+# skip
+input tap 1220 40
+sleep 5000
+input tap 1050 600
+sleep 2000
+# 开始战斗
+input tap 1160 650
+sleep 10000
+input tap 430 600
+sleep 200
+input tap 630 600
+sleep 200
+input tap 830 600
+# 剧情
+sleep 10000
+input tap 630 600
+sleep 1000
+input tap 630 600
+# 攻击
+
+
+
+# 开始冒险 2
+input tap 410 450
+# 退出
+input tap 50 50

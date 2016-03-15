@@ -79,6 +79,15 @@ public class RFrame {
             }
         });
         jPanel.add(button);
+        button = new JButton("屏幕控制器");
+        button.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                 new ScreenClickDialog(RFrame.this);
+            }
+        });
+        jPanel.add(button);
 
         frame.add(jPanel, BorderLayout.NORTH);
 
@@ -208,5 +217,9 @@ public class RFrame {
 
     public void addButtons(JButton button) {
         jPanel.add(button);
+    }
+
+    public JFrame getFrame() {
+        return frame;
     }
 }

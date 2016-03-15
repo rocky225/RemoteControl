@@ -1,0 +1,40 @@
+# 选择管卡
+input tap 670 420
+sleep 15000
+# skip
+input tap 1220 40
+# 进入战斗
+sleep 10000
+input tap 1050 600
+sleep 15000
+# 对话
+input tap 670 420
+sleep 3000
+input tap 1070 600
+# 男攻击
+sleep 10000
+input tap 430 600
+# 合击
+sleep 5000
+input tap 430 600
+sleep 400
+input tap 850 600
+# 女攻击
+sleep 10000
+input tap 850 600
+# 对话
+sleep 10000
+input tap 850 600
+# 男攻击
+sleep 5000
+input tap 430 600
+# 合击
+sleep 5000
+input tap 430 600
+sleep 400
+input tap 850 600
+sleep 5000
+input tap 850 600
+# 结束战斗,跳到下一关
+sleep 15000
+input tap 1100 550
