@@ -31,7 +31,6 @@ public class RFrame {
     private JScrollBar jScrollBar;
     private JTextField commandField;
     private JPanel jPanel;
-    private Container framePanel;
 
     public RFrame(String title) {
 
@@ -42,15 +41,9 @@ public class RFrame {
     public void init(String title) {
         frame = new JFrame(title);
         frame.setSize(1200, 650);
-//        frame.setLayout(new BorderLayout());
-
-        framePanel = frame.getContentPane();
-        framePanel.setLayout(new BoxLayout(framePanel, BoxLayout.Y_AXIS));
-
-//        frame.setLayout(new BoxLayout(frame,BoxLayout.Y_AXIS));
+        frame.setLayout(new BorderLayout());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // 设置关闭Listener
         frame.addWindowListener(
                 new WindowAdapter() {
                     public void windowClosing(WindowEvent e) {
@@ -59,14 +52,6 @@ public class RFrame {
                     }
                 }
         );
-
-
-
-        jPanel = new JPanel();
-jPanel.setBackground(Color.YELLOW);
-        commandField = new JTextField();
-        commandField.setColumns(30);
-        jPanel.add(commandField);
 
         JButton button = new JButton("COMMAND SEND");
         button.addActionListener(new ActionListener() {
@@ -78,24 +63,19 @@ jPanel.setBackground(Color.YELLOW);
                 sendCommands(line);
             }
         });
-        jPanel.add(button);
 
+        jPanel = new JPanel();
+
+        commandField = new JTextField();
+        commandField.setColumns(30);
+        jPanel.add(commandField);
+        jPanel.add(button);
         button = new JButton("获取设备信息");
         button.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 service.get10DevicesInfo();
-            }
-        });
-        jPanel.add(button);
-
-        button = new JButton("屏幕控制器");
-        button.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                 new ScreenClickDialog(RFrame.this);
             }
         });
         jPanel.add(button);
@@ -119,17 +99,12 @@ jPanel.setBackground(Color.YELLOW);
         });
         jPanel.add(button);
 
-//        frame.add(jPanel, BorderLayout.NORTH);
-        framePanel.add(jPanel);
-        framePanel.add(Box.createVerticalGlue());
+        frame.add(jPanel, BorderLayout.NORTH);
 
-/*        jPanel = new JPanel();
-        jPanel.setBackground(Color.BLUE);
-        jPanel.setLayout(new FlowLayout(FlowLayout.LEFT));*/
-//        jPanel.setBackground(Color.blue);
+
         readXML();
-//        frame.add(jPanel, BorderLayout.CENTER);
-//        framePanel.add(jPanel);
+
+        frame.add(jPanel, BorderLayout.CENTER);
 
         showArea = new JTextArea();
         showArea.setAutoscrolls(true);
@@ -139,12 +114,10 @@ jPanel.setBackground(Color.YELLOW);
         showArea.setVisible(true);
         JScrollPane jsp = new JScrollPane();
         jsp.setViewportView(showArea);
-        jsp.setMinimumSize(new Dimension(100, 100));
+        jsp.setMinimumSize(new Dimension(300, 300));
+        jsp.setPreferredSize(new Dimension(100,150));
         jScrollBar = jsp.getVerticalScrollBar();
-        // 设置控件的初始大小
-        jsp.setPreferredSize(new Dimension(100, 150));
-//        frame.add(jsp, BorderLayout.SOUTH);
-        framePanel.add(jsp);
+        frame.add(jsp, BorderLayout.SOUTH);
 
         frame.setVisible(true);
     }
@@ -237,10 +210,8 @@ jPanel.setBackground(Color.YELLOW);
     }
 
     public void addPanels(JPanel panel) {
-//        jPanel.add(panel);
-        framePanel.add(panel);
+        jPanel.add(panel);
     }
-
 
     public JFrame getFrame() {
         return frame;
