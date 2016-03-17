@@ -1,0 +1,20 @@
+亡者森林关卡1::input tap 250 450
+亡者森林关卡2::input tap 450 450
+亡者森林关卡3::input tap 550 350
+亡者森林关卡4::input tap 700 450
+亡者森林关卡5::input tap 870 450
+亡者森林关卡6::input tap 1030 350
+黑森林关卡1::input tap 220 400
+黑森林关卡2::input tap 330 330
+黑森林关卡3::input tap 450 250
+黑森林关卡4::input tap 620 250
+黑森林关卡5::input tap 710 350
+黑森林关卡6::input tap 550 430
+黑森林关卡7::input tap 450 520
+黑森林关卡8::input tap 620 550
+黑森林关卡9::input tap 770 470
+黑森林关卡10::input tap 950 470
+黑森林关卡11::input tap 1080 400
+6星奖励::input tap 550 650;sleep 1000;input tap 650 550
+12星奖励::input tap 750 650;sleep 1000;input tap 650 550
+18星奖励::input tap 920 650;sleep 1000;input tap 650 550

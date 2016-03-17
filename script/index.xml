@@ -1,5 +1,9 @@
 <Component>
-    <Panel name="Hello">
+    <Panel name="启动游戏">
+        <Button>
+            <name>QQ登录游戏</name>
+            <cmd>file script/loginQQGame.script</cmd>
+        </Button>
         <Button>
             <name>
                 新手游戏
@@ -32,14 +36,7 @@
                 am force-stop com.tencent.tmgp.bnsm
             </cmd>
         </Button>
-        <Button>
-            <name>
-                退出QQ
-            </name>
-            <cmd>
-                am force-stop com.tencent.mobileqq
-            </cmd>
-        </Button>
+
         <Button>
             <name>
                 First启动游戏
@@ -65,7 +62,7 @@
             </cmd>
         </Button>
     </Panel>
-    <Panel name="Hello2">
+    <Panel name="新手教程">
         <Button>
             <name>
                 寻宝
@@ -87,10 +84,33 @@
                 教程装备
             </name>
             <cmd>
-                input tap 1220 660;sleep 5000;input tap 670 650;sleep 5000;input tap 240 560;sleep 2000;input tap 100
-                530;sleep 3000;input tap 260 670;sleep 3000;input tap 260 670;sleep 3000;input tap 620 190;sleep
-                3000;input tap 710 150;sleep 3000;input tap 580 350;sleep 3000;input tap 580 350;sleep 3000;input tap
-                690 640;sleep 5000;input tap 1200 650;sleep 5000;input tap 1220 50;sleep 3000;input tap 50 50
+                input tap 1220 660
+                sleep 5000
+                input tap 670 650
+                sleep 5000
+                input tap 240 560
+                sleep 2000
+                input tap 100 530
+                sleep 3000
+                input tap 260 670
+                sleep 3000
+                input tap 260 670
+                sleep 3000
+                input tap 620 190
+                sleep 3000
+                input tap 710 150
+                sleep 3000
+                input tap 580 350
+                sleep 3000
+                input tap 580 350
+                sleep 3000
+                input tap 690 640
+                sleep 5000
+                input tap 1200 650
+                sleep 5000
+                input tap 1220 50
+                sleep 3000
+                input tap 50 50
             </cmd>
         </Button>
         <Button>
@@ -106,8 +126,17 @@
                 教程任务
             </name>
             <cmd>
-                input tap 1200 650;sleep 2000;input tap 1220 660;sleep 2000;input tap 900 600;sleep 3000;input tap 450
-                80;sleep 3000;input tap 1130 200;sleep 4000;input tap 650 520
+                input tap 1200 650
+                sleep 2000
+                input tap 1220 660
+                sleep 2000
+                input tap 900 600
+                sleep 3000
+                input tap 450 80
+                sleep 3000
+                input tap 1130 200
+                sleep 4000
+                input tap 650 520
             </cmd>
         </Button>
         <Button>
@@ -123,10 +152,27 @@
                 教程武功
             </name>
             <cmd>
-                input tap 1220 660;sleep 3000;input tap 670 650;sleep 5000;input tap 240 560;sleep 1000;input tap 190
-                450;sleep 2000;input tap 970 50;sleep 1000;input tap 1120 160;sleep 1000;input tap 1120 160;sleep
-                1000;input tap 1120 160;sleep 2000;input tap 1200 650;sleep 2000;input tap 1220 50;sleep 1000;input tap
-                50 50
+                input tap 1220 660
+                sleep 3000
+                input tap 670 650
+                sleep 5000
+                input tap 240 560
+                sleep 1000
+                input tap 190 450
+                sleep 2000
+                input tap 970 50
+                sleep 1000
+                input tap 1120 160
+                sleep 1000
+                input tap 1120 160
+                sleep 1000
+                input tap 1120 160
+                sleep 4000
+                input tap 1200 650
+                sleep 5000
+                input tap 1220 50
+                sleep 1000
+                input tap 50 50
             </cmd>
         </Button>
         <Button>
@@ -134,42 +180,24 @@
                 教程每日任务
             </name>
             <cmd>
-                input tap 1200 650;sleep 2000;input tap 900 600;sleep 2000;input tap 650 80;sleep 1000;input tap 1130
-                200;sleep 1000;input tap 650 520;sleep 1000;input tap 650 570;sleep 1000;input tap 50 50
-            </cmd>
-        </Button>
-        <Button>
-            <name>
-                功能菜单
-            </name>
-            <cmd>
-                input tap 1220 660
-            </cmd>
-        </Button>
-        <Button>
-            <name>
-                任务
-            </name>
-            <cmd>
+                # 教程对话
+                input tap 1200 650
+                sleep 500
+                # +
+                input tap 1200 650
+                sleep 2000
+                # 任务
                 input tap 900 600
-            </cmd>
-        </Button>
-
-
-        <Button>
-            <name>
-                快速注册
-            </name>
-            <cmd>
-                file script/register.script
-            </cmd>
-        </Button>
-        <Button>
-            <name>
-                QQ登录
-            </name>
-            <cmd>
-                file script/loginQQ.script
+                sleep 2000
+                input tap 650 80
+                sleep 1000
+                input tap 1130 200
+                sleep 1000
+                input tap 650 520
+                sleep 1000
+                input tap 650 570
+                sleep 1000
+                input tap 50 50
             </cmd>
         </Button>
         <Button>
@@ -177,8 +205,17 @@
                 选择戒灵米可
             </name>
             <cmd>
-                input tap 250 560;sleep 1500;input tap 1210 650;sleep 1500;input tap 1210 650;sleep 1500;input tap 950
-                370;sleep 1500;input tap 1210 650;sleep 1500;input tap 970 320
+                input tap 250 560
+                sleep 1500
+                input tap 1210 650
+                sleep 1500
+                input tap 1210 650
+                sleep 1500
+                input tap 950 370
+                sleep 1500
+                input tap 1210 650
+                sleep 1500
+                input tap 970 320
             </cmd>
         </Button>
         <Button>
@@ -186,8 +223,17 @@
                 选择戒灵茉莉
             </name>
             <cmd>
-                input tap 650 560;sleep 1500;input tap 1210 650;sleep 1500;input tap 1210 650;sleep 1500;input tap 950
-                370;sleep 1500;input tap 1210 650;sleep 1500;input tap 970 320
+                input tap 650 560
+                sleep 1500
+                input tap 1210 650
+                sleep 1500
+                input tap 1210 650
+                sleep 1500
+                input tap 950 370
+                sleep 1500
+                input tap 1210 650
+                sleep 1500
+                input tap 970 320
             </cmd>
         </Button>
         <Button>
@@ -195,11 +241,21 @@
                 选择戒灵索菲亚
             </name>
             <cmd>
-                input tap 1000 560;sleep 1500;input tap 1210 650;sleep 1500;input tap 1210 650;sleep 1500;input tap 950
-                370;sleep 1500;input tap 1210 650;sleep 1500;input tap 970 320
+                input tap 1000 560
+                sleep 1500
+                input tap 1210 650
+                sleep 1500
+                input tap 1210 650
+                sleep 1500
+                input tap 950 370
+                sleep 1500
+                input tap 1210 650
+                sleep 1500
+                input tap 970 320
             </cmd>
         </Button>
-
+    </Panel>
+    <Panel name="功能菜单">
         <Button>
             <name>
                 对话
@@ -226,67 +282,18 @@
         </Button>
         <Button>
             <name>
-                冒险
+                功能菜单
             </name>
             <cmd>
-                input tap 500 350
+                input tap 1220 660
             </cmd>
         </Button>
         <Button>
             <name>
-                下一关卡
+                任务
             </name>
             <cmd>
-                input tap 1230 350
-            </cmd>
-        </Button>
-        <Button>
-            <name>
-                进入战斗01
-            </name>
-            <cmd>
-                input tap 1100 600
-            </cmd>
-        </Button>
-        <Button>
-            <name>
-                进入战斗02
-            </name>
-            <cmd>
-                input tap 1150 650
-            </cmd>
-        </Button>
-        <Button>
-            <name>
-                攻击
-            </name>
-            <cmd>
-                input tap 430 600;sleep 200;input tap 630 600;sleep 200;input tap 830 600;sleep 200;input tap 230
-                600;sleep 200;input tap 1030 600
-            </cmd>
-        </Button>
-        <Button>
-            <name>
-                自动
-            </name>
-            <cmd>
-                input tap 1230 670
-            </cmd>
-        </Button>
-        <Button>
-            <name>
-                升级确定
-            </name>
-            <cmd>
-                input tap 650 560;sleep 8000;input tap 1110 530
-            </cmd>
-        </Button>
-        <Button>
-            <name>
-                战斗结束确定
-            </name>
-            <cmd>
-                input tap 1110 530;sleep 8000;input tap 1110 530
+                input tap 900 600
             </cmd>
         </Button>
         <Button>
@@ -294,7 +301,9 @@
                 我的卡牌
             </name>
             <cmd>
-                input tap 1220 660;sleep 1000;input tap 670 650
+                input tap 1220 660
+                sleep 1000
+                input tap 670 650
             </cmd>
         </Button>
         <Button>
@@ -302,7 +311,9 @@
                 查看
             </name>
             <cmd>
-                input tap 240 560;sleep 1500;input tap 100 530
+                input tap 240 560
+                sleep 1500
+                input tap 100 530
             </cmd>
         </Button>
         <Button>
@@ -326,7 +337,11 @@
                 推荐武器
             </name>
             <cmd>
-                input tap 620 190;sleep 1500;input tap 710 150;sleep 1500;input tap 650 650
+                input tap 620 190
+                sleep 1500
+                input tap 710 150
+                sleep 1500
+                input tap 650 650
             </cmd>
         </Button>
         <Button>
@@ -334,7 +349,11 @@
                 推荐耳环
             </name>
             <cmd>
-                input tap 620 450;sleep 1500;input tap 710 400;sleep 1500;input tap 650 650
+                input tap 620 450
+                sleep 1500
+                input tap 710 400
+                sleep 1500
+                input tap 650 650
             </cmd>
         </Button>
         <Button>
@@ -346,8 +365,26 @@
             </cmd>
         </Button>
         <Button>
+            <name>
+                强化
+            </name>
+            <cmd>
+                input tap 780 600
+            </cmd>
+        </Button>
+        <Button>
+            <name>
+                升星
+            </name>
+            <cmd>
+                input tap 1020 600
+            </cmd>
+        </Button>
+        <Button>
             <name>武功</name>
-            <cmd>input tap 240 560;sleep 1500;input tap 190 450</cmd>
+            <cmd>input tap 240 560
+                sleep 1500
+                input tap 190 450</cmd>
         </Button>
         <Button>
             <name>
@@ -367,14 +404,20 @@
         </Button>
         <Button>
             <name>锻造</name>
-            <cmd>input tap 240 560;sleep 1500;input tap 300 450;sleep 1000;input tap 1100 600</cmd>
+            <cmd>input tap 240 560
+                sleep 1500
+                input tap 300 450
+                sleep 5000
+                input tap 1100 600</cmd>
         </Button>
         <Button>
             <name>
                 任务
             </name>
             <cmd>
-                input tap 1220 660;sleep 1000;input tap 900 600
+                input tap 1220 660
+                sleep 1000
+                input tap 900 600
             </cmd>
         </Button>
         <Button>
@@ -382,7 +425,11 @@
                 成就
             </name>
             <cmd>
-                input tap 450 70;sleep 300;input tap 450 70;sleep 300;input tap 450 70
+                input tap 450 70
+                sleep 300
+                input tap 450 70
+                sleep 300
+                input tap 450 70
             </cmd>
         </Button>
         <Button>
@@ -419,24 +466,120 @@
         </Button>
         <Button>
             <name>
-                免费寻宝01
+                取消880 100
             </name>
             <cmd>
-                input tap 20 650;sleep 2000;input tap 870 420;sleep 5000;input tap 880 90;sleep 1000;input tap 650 650
+                input tap 880 80
             </cmd>
         </Button>
         <Button>
             <name>
-                免费寻宝02
+                取消1200 100
             </name>
             <cmd>
-                input tap 20 650;sleep 2000;input tap 410 420;sleep 5000;input tap 880 90;sleep 1000;input tap 650 650
+                input tap 1200 80
+            </cmd>
+        </Button>
+        <Select>
+            <name>
+                奖励
+            </name>
+            <cmd>
+                script/rewards.select
+            </cmd>
+        </Select>
+    </Panel>
+    <Panel name="攻击">
+
+        <Button>
+            <name>
+                冒险
+            </name>
+            <cmd>
+                input tap 500 350
             </cmd>
         </Button>
         <Button>
-            <name>QQ登录游戏</name>
-            <cmd>file script/loginQQGame.script</cmd>
+            <name>
+                下一场景
+            </name>
+            <cmd>
+                input tap 1230 350
+            </cmd>
         </Button>
+        <Select>
+            <name>
+                选择关卡
+            </name>
+            <cmd>
+                script/game.select
+            </cmd>
+        </Select>
+        <Button>
+            <name>
+                进入战斗01
+            </name>
+            <cmd>
+                input tap 1100 600
+            </cmd>
+        </Button>
+        <Button>
+            <name>
+                进入战斗02
+            </name>
+            <cmd>
+                input tap 1150 650
+            </cmd>
+        </Button>
+        <Button>
+            <name>
+                攻击
+            </name>
+            <cmd>
+                # 中间3位攻击
+                input tap 430 600
+                sleep 200
+                input tap 630 600
+                sleep 200
+                input tap 830 600
+                sleep 200
+                # 左右两边攻击
+                input tap 230 600
+                sleep 200
+                input tap 1030 600
+            </cmd>
+        </Button>
+        <Button>
+            <name>
+                自动
+            </name>
+            <cmd>
+                input tap 1230 670
+            </cmd>
+        </Button>
+        <Button>
+            <name>
+                升级确定
+            </name>
+            <cmd>
+                input tap 650 560
+                sleep 8000
+                input tap 1110 530
+            </cmd>
+        </Button>
+        <Button>
+            <name>
+                战斗结束确定
+            </name>
+            <cmd>
+                input tap 1110 530
+                sleep 8000
+                input tap 1110 530
+            </cmd>
+        </Button>
+
+    </Panel>
+    <Panel name="其他">
         <Button>
             <name>
                 切换设备信息
@@ -450,8 +593,41 @@
                 Fake
             </name>
             <cmd>
-                input tap 200 850;sleep 5000;input tap 100 400;sleep 8000;input tap 600 580;sleep 5000;input tap 680
-                250;sleep 1000;input tap 680 250;sleep 1000;input text Hello;
+                input tap 200 850
+                sleep 5000
+                input tap 100 400
+                sleep 8000
+                input tap 600 580
+                sleep 5000
+                input tap 680 250
+                sleep 1000
+                input tap 680 250
+                sleep 1000
+                input text Hello
+            </cmd>
+        </Button>
+        <Button>
+            <name>
+                退出QQ
+            </name>
+            <cmd>
+                am force-stop com.tencent.mobileqq
+            </cmd>
+        </Button>
+        <Button>
+            <name>
+                快速注册
+            </name>
+            <cmd>
+                file script/register.script
+            </cmd>
+        </Button>
+        <Button>
+            <name>
+                QQ登录
+            </name>
+            <cmd>
+                file script/loginQQ.script
             </cmd>
         </Button>
     </Panel>

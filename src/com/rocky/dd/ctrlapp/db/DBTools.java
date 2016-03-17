@@ -59,6 +59,7 @@ public class DBTools {
 
     public void execute(String sql) {
         try {
+            System.out.println("执行SQL [" + sql + "]");
             statement.execute(sql);
         } catch (SQLException e) {
             e.printStackTrace();

@@ -1,0 +1,8 @@
+亡者森林6星奖励::input tap 550 650;sleep 1000;input tap 650 550
+亡者森林12星奖励::input tap 750 650;sleep 1000;input tap 650 550
+亡者森林18星奖励::input tap 920 650;sleep 1000;input tap 650 550
+免费寻宝01::input tap 20 650;sleep 2000;input tap 410 420;sleep 5000;input tap 880 90;sleep 1000;input tap 650 650;sleep 1000;input tap 50 50
+免费寻宝02::input tap 20 650;sleep 2000;input tap 870 420;sleep 5000;input tap 880 90;sleep 1000;input tap 650 650;sleep 1000;input tap 50 50
+幸运福袋::input tap 30 510;
+签到第二天::input tap 430 200;sleep 2000;input tap 650 470
+签到2::input tap 400 370;sleep 2000;input tap 650 470

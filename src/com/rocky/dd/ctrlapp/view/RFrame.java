@@ -103,8 +103,7 @@ public class RFrame {
 
 
         readXML();
-
-        frame.add(jPanel, BorderLayout.CENTER);
+//        frame.add(jPanel, BorderLayout.CENTER);
 
         showArea = new JTextArea();
         showArea.setAutoscrolls(true);
@@ -210,7 +209,7 @@ public class RFrame {
     }
 
     public void addPanels(JPanel panel) {
-        jPanel.add(panel);
+        frame.add(panel, BorderLayout.CENTER);
     }
 
     public JFrame getFrame() {

@@ -16,6 +16,8 @@ import java.util.LinkedList;
  */
 public class SocketServices {
 
+    private final int INFO_NUMBER = 6;
+
     private ServerSocket server = null;
     private LinkedList<SocketClient> sockets;
     private RFrame frame;
@@ -68,7 +70,7 @@ public class SocketServices {
                         SocketClient socketClient = it.next();
                         Socket socket = socketClient.getSocket();
                         if (socket == null || socket.isClosed() || !socket.isConnected()) {
-                            System.out.println("清除已断开的Socket Client");
+                            System.out.println("清除已断开的Socket Client : " + socketClient.getDevice_no());
                             sockets.remove(socketClient);
                             socketClient.close();
                         }
@@ -84,7 +86,7 @@ public class SocketServices {
     }
 
     public void write(String msg) {
-        System.out.println("生成的CMD:\n" + msg);
+        System.out.println("生成的CMD:" + msg);
         Iterator<SocketClient> it = sockets.iterator();
         while (it.hasNext()) {
             SocketClient socketClient = it.next();
@@ -93,14 +95,19 @@ public class SocketServices {
                 socketClient.write(msg);
             }
         }
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
+
 
     public void get10DevicesInfo() {
         System.out.println("get10DevicesInfo");
         ResultSet rs = null;
         try {
             DBTools dbTools = DBTools.getInstance();
-            int number = 0;
             LinkedList<String> ids = new LinkedList<>();
             for (SocketClient sc : sockets) {
                 if (sc != null) {
@@ -117,9 +124,9 @@ public class SocketServices {
                 if(rs2 != null) {
                     rs2.next();
                     BigDecimal bd = rs2.getBigDecimal(1);
-                     idNumber = 10 - bd.intValue();
+                     idNumber = INFO_NUMBER - bd.intValue();
                 } else {
-                    idNumber = 10;
+                    idNumber = INFO_NUMBER;
                 }
                 System.out.println(deviceinfo_id + " 数目为" + idNumber);
                 if (idNumber > 0) {
